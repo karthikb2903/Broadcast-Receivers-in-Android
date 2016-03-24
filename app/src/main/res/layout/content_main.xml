@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.karthik.sjsu.broadcast.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/mainAct_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/mainAct_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/amountTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mainAct_title"
+        android:layout_marginTop="35dp"
+        android:text="@string/amountTxt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="70px" />
+
+    <EditText
+        android:id="@+id/amountEditTxt"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/amountTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:inputType="number"
+         />
+
+    <TextView
+        android:id="@+id/convertTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/amountEditTxt"
+        android:layout_marginTop="12dp"
+        android:text="@string/convertToTxt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="70px" />
+
+    <Button
+        android:id="@+id/britishBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/convertTxt"
+        android:layout_marginTop="12dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:onClick="convertToPound"
+        android:text="@string/britishBtnTxt"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/euroBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:layout_alignEnd="@+id/amountEditTxt"
+        android:layout_alignRight="@+id/amountEditTxt"
+        android:layout_alignTop="@+id/britishBtn"
+        android:background="@color/black"
+        android:gravity="center"
+        android:onClick="convertToEuro"
+        android:text="@string/euroBtnTxt"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/indianBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/britishBtn"
+        android:layout_marginTop="12dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:onClick="convertToRupee"
+        android:text="@string/indianBtnTxt"
+        android:textColor="@color/white" />
+
+    Button
+        android:id="@+id/chineseYuanBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:layout_above="@+id/exitBtn"
+        android:layout_alignLeft="@+id/euroBtn"
+        android:layout_alignStart="@+id/euroBtn"
+        android:layout_marginTop="12dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:onClick="convertToYuan"
+        android:text="@string/chineseYuanBtnTxt"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="@string/exitBtnTxt"
+        android:onClick="exitApp"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/indianBtn"
+        android:layout_alignRight="@+id/amountEditTxt"
+        android:layout_alignEnd="@+id/amountEditTxt" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exitBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/broadCastMsg1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Broadcast</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainAct_title">Currency Converter App</string>
+    <string name="amountTxt">Dollar Amount($) :</string>
+    <string name="convertToTxt">Convert To :</string>
+    <string name="britishBtnTxt">British Pound</string>
+    <string name="euroBtnTxt">Euro</string>
+    <string name="indianBtnTxt">Indian Rupee</string>
+    <string name="chineseYuanBtnTxt">Chinese Yuan</string>
+    <string name="exitBtnTxt">Exit</string>
+    <string name="broadCastMsg1">Status</string>
+    <string name="title_activity_receiver">Receiver</string>
+    <string name="title_activity_my_receiver">MyReceiver</string>
+
+
+</resources>
